@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.css";
+import CardComponent from "./Components/Card";
 
 function App() {
-  return <h1>Hello</h1>;
+  return (
+    <CardComponent />
+  );
 }
 
 export default App;
