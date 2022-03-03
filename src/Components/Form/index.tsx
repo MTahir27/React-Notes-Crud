@@ -1,16 +1,26 @@
 import InputField from "../InputField";
 import Card from "@mui/material/Card";
-import { CardContent, Typography } from "@mui/material";
+import { CardContent, Typography, Stack } from "@mui/material";
+import CustomButton from "../CustonButton";
 
 export default function NoteForm() {
   return (
-    <Card sx={{m: 2}}>
+    <Card sx={{ m: 2 }} component="form" noValidate autoComplete="off">
       <CardContent>
-        <Typography component="div" variant="h5" sx={{m:1}}>
+        <Stack spacing={2}>
+          <Typography component="div" variant="h5">
             Enter Notes
-        </Typography>
-        <InputField />
-        <InputField />
+          </Typography>
+          <InputField label="title" id="title" />
+          <InputField
+            label="Description"
+            multiline
+            rows={4}
+            placeholder="Write Notes Here"
+            id="description"
+          />
+          <CustomButton text="Add Note" />
+        </Stack>
       </CardContent>
     </Card>
   );

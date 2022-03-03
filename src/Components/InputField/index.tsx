@@ -1,21 +1,29 @@
-import * as React from "react";
+import React, {FC} from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
-export default function InputField() {
+interface InputField{
+  label: string,
+  placeholder?: string,
+  multiline?: any,
+  rows?: number,
+}
+
+export default function InputField({label, ...otherInputProps}:InputField) {
   return (
     <Box
       sx={{
         display: "flex",
         alignItems: "center",
-        "& > :not(style)": { m: 1 },
       }}
     >
       <TextField
         fullWidth
         helperText=""
         id="demo-helper-text-aligned-no-helper"
-        label="Label"
+        label={label}
+        {...otherInputProps}
+        style={{textTransform: "capitalize"}}
       />
     </Box>
   );
