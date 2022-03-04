@@ -1,9 +1,9 @@
-import Container from "@mui/material/Container";
+import Box from "@mui/material/Container";
 import CardComponent from "../Card";
 export default function NotesContainer() {
   return (
-    <Container>
+    <Box>
       <CardComponent />
-    </Container>
+    </Box>
   );
 }

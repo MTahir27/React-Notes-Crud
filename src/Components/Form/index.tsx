@@ -5,7 +5,7 @@ import CustomButton from "../CustonButton";
 
 export default function NoteForm() {
   return (
-    <Card sx={{ m: 2 }} component="form" noValidate autoComplete="off">
+    <Card sx={{ my: 4 }} component="form" noValidate autoComplete="off">
       <CardContent>
         <Stack spacing={2}>
           <Typography component="div" variant="h5">
