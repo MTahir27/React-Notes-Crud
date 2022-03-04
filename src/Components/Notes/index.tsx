@@ -1,11 +1,7 @@
-import {
-  CardActions,
-  CardHeader,
-  Divider,
-  IconButton,
-  Typography,
-  Button,
-} from "@mui/material";
+import CardActions from "@mui/material/CardActions";
+import CardHeader from "@mui/material/CardHeader";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Card from "@mui/material/Card";
