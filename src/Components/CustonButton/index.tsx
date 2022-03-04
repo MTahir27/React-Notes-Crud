@@ -14,6 +14,7 @@ interface ButtonType {
   variant?: "contained" | "text" | "outlined" | undefined;
   startIcon?: any;
   endIcon?: any;
+  type?: "submit" | "button" | "reset";
 }
 
 export default function CustomButton({

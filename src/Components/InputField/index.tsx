@@ -8,6 +8,8 @@ interface InputField {
   id?: string;
   multiline?: any;
   rows?: number;
+  onChange?: any;
+  name?: "string" | any;
 }
 
 export default function InputField({ label, ...otherInputProps }: InputField) {
