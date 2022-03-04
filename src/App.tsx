@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import NoteForm from "./Components/Form";
-import CardComponent from "./Components/Card";
+import NotesContainer from "./Components/Container";
 import { Container } from "@mui/material";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Container>
         <NoteForm />
-        <CardComponent />
+        <NotesContainer />
       </Container>
     </>
   );

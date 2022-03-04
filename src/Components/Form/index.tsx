@@ -2,6 +2,7 @@ import InputField from "../InputField";
 import Card from "@mui/material/Card";
 import { CardContent, Typography, Stack } from "@mui/material";
 import CustomButton from "../CustonButton";
+import SendIcon from '@mui/icons-material/Send';
 
 export default function NoteForm() {
   return (
@@ -19,7 +20,7 @@ export default function NoteForm() {
             placeholder="Write Notes Here"
             id="description"
           />
-          <CustomButton text="Add Note" />
+          <CustomButton variant="contained" text="Add Note" endIcon={<SendIcon />} />
         </Stack>
       </CardContent>
     </Card>
