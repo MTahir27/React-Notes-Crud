@@ -6,14 +6,16 @@ import CustomButton from "../CustonButton";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function NoteForm() {
-  const [note, setNotes] = useState([{}]);
+  const [note, setNotes] = useState({});
 
   const handelChange = (event: any) => {
     setNotes({ ...note, [event.target.name]: event.target.value });
   };
   const handleSubmit = (event: any) => {
     event.preventDefault();
+    localStorage.setItem("Notes", JSON.stringify(note));
   };
+
   return (
     <Card
       sx={{ my: 4 }}
