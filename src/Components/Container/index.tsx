@@ -9,15 +9,6 @@ export default function NotesContainer() {
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Notes />
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Notes />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Notes />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Notes />
-        </Grid>
       </Grid>
     </Box>
   );

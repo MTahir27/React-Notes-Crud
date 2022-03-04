@@ -6,10 +6,10 @@ import CustomButton from "../CustonButton";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function NoteForm() {
-  const [note, setNotes] = useState([]);
+  const [note, setNotes] = useState([{}]);
 
   const handelChange = (event: any) => {
-    console.log(event.target.value);
+    setNotes({ ...note, [event.target.name]: event.target.value });
   };
   const handleSubmit = (event: any) => {
     event.preventDefault();
